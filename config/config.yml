@@ -1,8 +1,0 @@
-dbconfig:
-  host: localhost
-  user: postgres
-  password: sosiska
-  dbname: restapi
-  port: 5430
-  sslmode: disable
-  timezone: europe/moscow

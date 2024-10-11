@@ -44,8 +44,7 @@ func main() {
 	handlers := handler.NewHandler(services)
 
 	srv := new(todo.Server)
-	port := viper.GetString("port")
-	if err := srv.Run(port, handlers.InitRoutes()); err != nil {
+	if err := srv.Run(viper.GetString("port"), handlers.InitRoutes()); err != nil {
 		panic(err)
 	}
 }
